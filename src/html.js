@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import favicon from "../static/img/favicon.ico";
 
 export default function HTML(props) {
   return (
@@ -11,6 +12,7 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
+        <link rel="icon" type="image/x-icon" href={favicon} />
         <link
           href="https://fonts.googleapis.com/css?family=Lato:300,400,700%7CRoboto+Slab:400,700,300"
           rel="stylesheet"

@@ -1,3 +1,4 @@
+import { Link } from "gatsby";
 import React from "react";
 
 export default function Header() {
@@ -11,9 +12,7 @@ export default function Header() {
         <div className="medium-10 columns text-right">
           <ul id="menu">
             <li>
-              <a className="smooth-scroll" href="#home-scroll">
-                Home
-              </a>
+              <Link to="/">Home</Link>
             </li>
             <li>
               <a
@@ -43,10 +42,7 @@ export default function Header() {
               </a>
             </li>
             <li>
-              <a
-                className="smooth-scroll"
-                href="https://www.bestphotoediting.com.au/blog"
-              >
+              <a className="smooth-scroll" href="/blog">
                 Blog
               </a>
             </li>
