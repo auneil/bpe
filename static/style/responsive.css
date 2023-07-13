@@ -1,3 +1,6 @@
+.visible-xs {
+  display: none;
+}
 /***** SMARTPHONES *****/
 
 @media all and (max-width: 767px) {
@@ -101,6 +104,9 @@
   #footer .text-right {
     text-align: left !important;
     margin-top: 11px;
+  }
+  .visible-xs {
+    display: block;
   }
 }
 

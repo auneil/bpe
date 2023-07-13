@@ -104,6 +104,7 @@ const IndexPage = () => {
               <i className="icon icon_cursor_alt">&nbsp;</i>A fast and reliable
               photo retouching service
             </h3>
+            <div className="pad-bottom visible-xs"></div>
           </div>
           <div className="medium-3 columns text-center">
             <a
