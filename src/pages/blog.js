@@ -28,7 +28,7 @@ function Blog({ content }) {
 export default function Blogs() {
   const data = useStaticQuery(graphql`
     query {
-      allDataJson(limit: 10) {
+      allDataJson(limit: 20) {
         nodes {
           title
           date

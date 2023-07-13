@@ -6,6 +6,7 @@ module.exports = {
     title: `BPE - bestphotoediting`,
     siteUrl: `https://bestphotoediting.com.au/`,
   },
+  trailingSlash: "never",
   plugins: [
     `gatsby-transformer-json`,
     {

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 export default function Footer() {
   return (
     <section id="footer">
@@ -12,30 +13,28 @@ export default function Footer() {
 
               <ul>
                 <li className="text-white">
-                  <a href="https://www.bestphotoediting.com.au/wedding-photo-editing">
-                    {" "}
+                  <Link to="/blog/wedding-photo-editing-services">
                     Wedding photo retouching services
-                  </a>
+                  </Link>
                 </li>
                 <li className="text-white">
-                  <a href="https://www.bestphotoediting.com.au/photo-editing-services-for-photographers">
+                  <Link to="/blog/photo-editing-services-for-photographers">
                     Photo editing services for photographers
-                  </a>
+                  </Link>
                 </li>
                 <li className="text-white">
                   Real estate photo editing services
                 </li>
                 <li className="text-white">
-                  <a href="https://www.bestphotoediting.com.au/product-photo-editing">
-                    {" "}
+                  <Link to="/blog/product-photo-editing-services-help-increasing-sales">
                     Products photo editing services
-                  </a>
+                  </Link>
                 </li>
 
                 <li className="text-white">
-                  <a href="https://www.bestphotoediting.com.au/photo-enhancement-services">
+                  <Link to="/blog/all-you-need-to-know-about-photo-enhancement">
                     Photo enhancement services
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -64,7 +63,8 @@ export default function Footer() {
           <div className="row pad-top">
             <div className="medium-12 columns text-center">
               <span className="text-white">
-                &copy; Copyright 2023 BPE - bestphotoediting.com.au
+                &copy; Copyright {new Date().getFullYear()} BPE -
+                bestphotoediting.com.au
               </span>
             </div>
           </div>
