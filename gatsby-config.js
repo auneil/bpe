@@ -6,6 +6,7 @@ module.exports = {
     title: `BPE - bestphotoediting`,
     siteUrl: `https://bestphotoediting.com.au/`,
   },
+  trailingSlash: "never",
   plugins: [
     `gatsby-transformer-json`,
     {
@@ -28,6 +29,13 @@ module.exports = {
         host: "https://bestphotoediting.com.au",
         sitemap: "https://bestphotoediting.com.au/sitemap.xml",
         policy: [{ userAgent: "*", allow: "/" }],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // The property ID; the tracking code won't be generated without it
+        trackingId: "G-K32PSXBFKG",
       },
     },
   ],
