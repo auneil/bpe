@@ -13,7 +13,7 @@ export const createPages = async function ({ actions, graphql }) {
   data.allDataJson.nodes.forEach(({ title }) => {
     actions.createPage({
       path: "/blog/" + slugify(title),
-      component: path.resolve("./src/templates/Blog.jsx"),
+      component: path.resolve("./src/templates/blog.jsx"),
       context: { title },
     });
   });

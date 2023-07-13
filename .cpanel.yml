@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/s1006069/public_html/bestphotoediting.com.au
+    - /bin/cp -R public/* $DEPLOYPATH
