@@ -3,15 +3,32 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `bpe`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: `BPE - bestphotoediting`,
+    siteUrl: `https://bestphotoediting.com.au/`,
   },
-  plugins: ["gatsby-plugin-google-gtag", "gatsby-plugin-image", "gatsby-plugin-sitemap", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      "name": "images",
-      "path": "./src/images/"
+  plugins: [
+    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/data/`,
+      },
     },
-    __key: "images"
-  }]
+    {
+      resolve: `gatsby-plugin-advanced-sitemap`,
+      options: {
+        // The filepath and name to Index Sitemap. Defaults to '/sitemap.xml'.
+        output: "/sitemap.xml",
+        exclude: [`/dev-404-page`, `/404`, `/404.html`],
+      },
+    },
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: "https://bestphotoediting.com.au",
+        sitemap: "https://bestphotoediting.com.au/sitemap.xml",
+        policy: [{ userAgent: "*", allow: "/" }],
+      },
+    },
+  ],
 };

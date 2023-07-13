@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://bestphotoediting.com.au/sitemap.xml
+Host: https://bestphotoediting.com.au
